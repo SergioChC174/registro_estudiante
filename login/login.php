@@ -9,16 +9,16 @@
 <body>
 <!-- partial:index.partial.html -->
 <div id="logo"> 
-  <h1><i> LOGIN TO BIOS</i></h1>
+  <h1><i> LOGIN TO PLATAFORM</i></h1>
 </div> 
 <section class="stark-login">
   
-  <form action="" method="">	
+  <form action="verificar.php" method="POST">	
     <div id="fade-box">
-      <input type="text" name="username" id="username" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
+      <input type="text" name="usuario" id="username" placeholder="Usuario" required>
+        <input type="password" name="contraseña" placeholder="Contraseña" required>
           
-          <button>Log In</button> 
+          <button>Iniciar sesion</button> 
         </div>
       </form>
       <div class="hexagons">
