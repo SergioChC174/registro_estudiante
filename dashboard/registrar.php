@@ -58,18 +58,18 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">ALUMNOS:</h6>
-                        <a class="collapse-item" href="registrar.php">Registrar</a>
+                        <a class="collapse-item active" href="registrar.php">Registrar</a>
                         <a class="collapse-item" href="#">Register</a>
                         <a class="collapse-item" href="#">Forgot Password</a>
                         <div class="collapse-divider"></div>
-                        
+
                         <a class="collapse-item" href="#">404 Page</a>
-                        <a class="collapse-item active" href="blank.php">Blank Page</a>
+                        <a class="collapse-item " href="blank.php">Blank Page</a>
                     </div>
                 </div>
             </li>
 
-            
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -204,8 +204,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -216,8 +215,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -228,8 +226,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -261,8 +258,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -296,10 +292,89 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
-
+                    <h1 class="h3 mb-4 text-gray-800">REGISTRAR ALUMNO</h1>
                 </div>
-                <!-- /.container-fluid -->
+
+
+
+
+                <div class="card-body p-5">
+                    <!-- Auth header with logo image-->
+                    <div class="text-center">
+                        <img class="mb-3" src="https://architecture-it.github.io/dotnet-platform/images/logo2.png"
+                            alt="..." style="height: 50px">
+                        <h1 class="display-5 mb-0">Registrar nuevo alumno</h1>
+                        <div class="subheading-1 mb-5">llene lo que se solicita</div>
+                    </div>
+                    <!-- Register new account form-->
+                    <form class="user">
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <input type="text" class="form-control form-control-user" id="nombreAlumno"
+                                    placeholder="Nombre del Alumno">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control form-control-user" id="carnetAlumno"
+                                    placeholder="Apellido del Alumno">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+  <div class="col-md-6">
+    <select class="form-control form-control-user" id="curso1">
+      <option value="">Grado</option>
+      <option value="Matematicas">Matemáticas</option>
+      <option value="Lenguaje">Lenguaje</option>
+      <option value="Ciencias">Ciencias</option>
+      <option value="Historia">Historia</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <select class="form-control form-control-user" id="curso2">
+      <option value="">Carrera</option>
+      <option value="Matematicas">Matemáticas</option>
+      <option value="Lenguaje">Lenguaje</option>
+      <option value="Ciencias">Ciencias</option>
+      <option value="Historia">Historia</option>
+    </select>
+  </div>
+</div>
+
+
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <input type="number" class="form-control form-control-user" id="nota1"
+                                    placeholder="Nota 1">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control form-control-user" id="nota2"
+                                    placeholder="Nota 2">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <input type="number" class="form-control form-control-user" id="nota3"
+                                    placeholder="Nota 3">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control form-control-user" id="notaFinal"
+                                    placeholder="Nota Final">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-user btn-block">
+                            Guardar Notas
+                        </button>
+                    </form>
+                </div>
+
+
+
+
+
+
+
 
             </div>
             <!-- End of Main Content -->
