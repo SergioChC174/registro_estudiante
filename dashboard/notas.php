@@ -35,7 +35,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Plataforma</div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
             </a>
 
 
@@ -52,15 +52,15 @@
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
                     aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Alumno</span>
+                    <span>Pages</span>
                 </a>
                 <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">ALUMNOS:</h6>
-                        <a class="collapse-item" href="registrar.php">Registrar</a>
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="#">Login</a>
                         <a class="collapse-item" href="#">Register</a>
-                        <a class="collapse-item" href="#">Forgot Password</a>
+                        <a class="collapse-item" href="">Registro de notas</a>
                         <div class="collapse-divider"></div>
                         
                         <a class="collapse-item" href="#">404 Page</a>
@@ -296,7 +296,57 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Notas</h1>
+
+                    <form class="user">
+    <div class="form-group row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <input type="text" class="form-control form-control-user" id="nombreAlumno"
+                placeholder="Nombre del Alumno">
+        </div>
+        <div class="col-sm-6">
+            <input type="text" class="form-control form-control-user" id="carnetAlumno"
+                placeholder="Carné del Alumno">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <select class="form-control form-control-user" id="curso">
+            <option value="">Seleccione un Curso</option>
+            <option value="Matematicas">Matemáticas</option>
+            <option value="Lenguaje">Lenguaje</option>
+            <option value="Ciencias">Ciencias</option>
+            <option value="Historia">Historia</option>
+        </select>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <input type="number" class="form-control form-control-user" id="nota1"
+                placeholder="Nota 1">
+        </div>
+        <div class="col-sm-6">
+            <input type="number" class="form-control form-control-user" id="nota2"
+                placeholder="Nota 2">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <input type="number" class="form-control form-control-user" id="nota3"
+                placeholder="Nota 3">
+        </div>
+        <div class="col-sm-6">
+            <input type="number" class="form-control form-control-user" id="notaFinal"
+                placeholder="Nota Final">
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-user btn-block">
+        Guardar Notas
+    </button>
+</form>
+
 
                 </div>
                 <!-- /.container-fluid -->
